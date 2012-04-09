@@ -18,6 +18,9 @@
 		9FA5FB661533335400075808 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FA5FB431533335300075808 /* Cocoa.framework */; };
 		9FA5FB6E1533335400075808 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9FA5FB6C1533335400075808 /* InfoPlist.strings */; };
 		9FA5FB711533335400075808 /* DCPU_WorkbenchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FA5FB701533335400075808 /* DCPU_WorkbenchTests.m */; };
+		9FA5FB8515333D7100075808 /* ARCAssembler.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FA5FB8415333D7100075808 /* ARCAssembler.m */; };
+		9FA5FB8615333D7100075808 /* ARCAssembler.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FA5FB8415333D7100075808 /* ARCAssembler.m */; };
+		9FA5FB8915333DE600075808 /* ARCAssemblerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FA5FB8815333DE600075808 /* ARCAssemblerTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,10 @@
 		9FA5FB6D1533335400075808 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9FA5FB6F1533335400075808 /* DCPU_WorkbenchTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCPU_WorkbenchTests.h; sourceTree = "<group>"; };
 		9FA5FB701533335400075808 /* DCPU_WorkbenchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCPU_WorkbenchTests.m; sourceTree = "<group>"; };
+		9FA5FB8315333D7100075808 /* ARCAssembler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARCAssembler.h; sourceTree = "<group>"; };
+		9FA5FB8415333D7100075808 /* ARCAssembler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARCAssembler.m; sourceTree = "<group>"; };
+		9FA5FB8715333DE600075808 /* ARCAssemblerTests.h */ = {isa = PBXFileReference; fileEncoding = 4; path = ARCAssemblerTests.h; sourceTree = "<group>"; };
+		9FA5FB8815333DE600075808 /* ARCAssemblerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARCAssemblerTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +128,8 @@
 				9FA5FB581533335300075808 /* ARCDocument.xib */,
 				9FA5FB5B1533335300075808 /* MainMenu.xib */,
 				9FA5FB4A1533335300075808 /* Supporting Files */,
+				9FA5FB8315333D7100075808 /* ARCAssembler.h */,
+				9FA5FB8415333D7100075808 /* ARCAssembler.m */,
 			);
 			path = "DCPU Workbench";
 			sourceTree = "<group>";
@@ -143,6 +152,8 @@
 				9FA5FB6F1533335400075808 /* DCPU_WorkbenchTests.h */,
 				9FA5FB701533335400075808 /* DCPU_WorkbenchTests.m */,
 				9FA5FB6A1533335400075808 /* Supporting Files */,
+				9FA5FB8715333DE600075808 /* ARCAssemblerTests.h */,
+				9FA5FB8815333DE600075808 /* ARCAssemblerTests.m */,
 			);
 			path = "DCPU WorkbenchTests";
 			sourceTree = "<group>";
@@ -268,6 +279,7 @@
 			files = (
 				9FA5FB501533335300075808 /* main.m in Sources */,
 				9FA5FB571533335300075808 /* ARCDocument.m in Sources */,
+				9FA5FB8515333D7100075808 /* ARCAssembler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +288,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FA5FB711533335400075808 /* DCPU_WorkbenchTests.m in Sources */,
+				9FA5FB8615333D7100075808 /* ARCAssembler.m in Sources */,
+				9FA5FB8915333DE600075808 /* ARCAssemblerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
