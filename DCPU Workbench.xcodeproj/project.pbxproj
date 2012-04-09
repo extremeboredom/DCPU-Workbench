@@ -36,20 +36,20 @@
 		9FA5FB461533335300075808 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		9FA5FB471533335300075808 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		9FA5FB481533335300075808 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		9FA5FB4B1533335300075808 /* DCPU Workbench-Info.plist */ = {isa = PBXFileReference; path = "DCPU Workbench-Info.plist"; sourceTree = "<group>"; };
+		9FA5FB4B1533335300075808 /* DCPU Workbench-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DCPU Workbench-Info.plist"; sourceTree = "<group>"; };
 		9FA5FB4D1533335300075808 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9FA5FB4F1533335300075808 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		9FA5FB511533335300075808 /* DCPU Workbench-Prefix.pch */ = {isa = PBXFileReference; path = "DCPU Workbench-Prefix.pch"; sourceTree = "<group>"; };
+		9FA5FB511533335300075808 /* DCPU Workbench-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DCPU Workbench-Prefix.pch"; sourceTree = "<group>"; };
 		9FA5FB531533335300075808 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		9FA5FB551533335300075808 /* ARCDocument.h */ = {isa = PBXFileReference; path = ARCDocument.h; sourceTree = "<group>"; };
+		9FA5FB551533335300075808 /* ARCDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARCDocument.h; sourceTree = "<group>"; };
 		9FA5FB561533335300075808 /* ARCDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARCDocument.m; sourceTree = "<group>"; };
 		9FA5FB591533335300075808 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ARCDocument.xib; sourceTree = "<group>"; };
 		9FA5FB5C1533335300075808 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		9FA5FB631533335400075808 /* DCPU WorkbenchTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DCPU WorkbenchTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FA5FB641533335400075808 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		9FA5FB6B1533335400075808 /* DCPU WorkbenchTests-Info.plist */ = {isa = PBXFileReference; path = "DCPU WorkbenchTests-Info.plist"; sourceTree = "<group>"; };
+		9FA5FB6B1533335400075808 /* DCPU WorkbenchTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DCPU WorkbenchTests-Info.plist"; sourceTree = "<group>"; };
 		9FA5FB6D1533335400075808 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		9FA5FB6F1533335400075808 /* DCPU_WorkbenchTests.h */ = {isa = PBXFileReference; path = DCPU_WorkbenchTests.h; sourceTree = "<group>"; };
+		9FA5FB6F1533335400075808 /* DCPU_WorkbenchTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCPU_WorkbenchTests.h; sourceTree = "<group>"; };
 		9FA5FB701533335400075808 /* DCPU_WorkbenchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCPU_WorkbenchTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
