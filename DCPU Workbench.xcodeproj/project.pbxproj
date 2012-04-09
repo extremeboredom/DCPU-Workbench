@@ -1,0 +1,464 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9FA5FB441533335300075808 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FA5FB431533335300075808 /* Cocoa.framework */; };
+		9FA5FB4E1533335300075808 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9FA5FB4C1533335300075808 /* InfoPlist.strings */; };
+		9FA5FB501533335300075808 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FA5FB4F1533335300075808 /* main.m */; };
+		9FA5FB541533335300075808 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 9FA5FB521533335300075808 /* Credits.rtf */; };
+		9FA5FB571533335300075808 /* ARCDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FA5FB561533335300075808 /* ARCDocument.m */; };
+		9FA5FB5A1533335300075808 /* ARCDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FA5FB581533335300075808 /* ARCDocument.xib */; };
+		9FA5FB5D1533335300075808 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FA5FB5B1533335300075808 /* MainMenu.xib */; };
+		9FA5FB651533335400075808 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FA5FB641533335400075808 /* SenTestingKit.framework */; };
+		9FA5FB661533335400075808 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FA5FB431533335300075808 /* Cocoa.framework */; };
+		9FA5FB6E1533335400075808 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9FA5FB6C1533335400075808 /* InfoPlist.strings */; };
+		9FA5FB711533335400075808 /* DCPU_WorkbenchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FA5FB701533335400075808 /* DCPU_WorkbenchTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9FA5FB671533335400075808 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9FA5FB361533335200075808 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9FA5FB3E1533335300075808;
+			remoteInfo = "DCPU Workbench";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9FA5FB3F1533335300075808 /* DCPU Workbench.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DCPU Workbench.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FA5FB431533335300075808 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		9FA5FB461533335300075808 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		9FA5FB471533335300075808 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		9FA5FB481533335300075808 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9FA5FB4B1533335300075808 /* DCPU Workbench-Info.plist */ = {isa = PBXFileReference; path = "DCPU Workbench-Info.plist"; sourceTree = "<group>"; };
+		9FA5FB4D1533335300075808 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9FA5FB4F1533335300075808 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9FA5FB511533335300075808 /* DCPU Workbench-Prefix.pch */ = {isa = PBXFileReference; path = "DCPU Workbench-Prefix.pch"; sourceTree = "<group>"; };
+		9FA5FB531533335300075808 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		9FA5FB551533335300075808 /* ARCDocument.h */ = {isa = PBXFileReference; path = ARCDocument.h; sourceTree = "<group>"; };
+		9FA5FB561533335300075808 /* ARCDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARCDocument.m; sourceTree = "<group>"; };
+		9FA5FB591533335300075808 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ARCDocument.xib; sourceTree = "<group>"; };
+		9FA5FB5C1533335300075808 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		9FA5FB631533335400075808 /* DCPU WorkbenchTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DCPU WorkbenchTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FA5FB641533335400075808 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		9FA5FB6B1533335400075808 /* DCPU WorkbenchTests-Info.plist */ = {isa = PBXFileReference; path = "DCPU WorkbenchTests-Info.plist"; sourceTree = "<group>"; };
+		9FA5FB6D1533335400075808 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9FA5FB6F1533335400075808 /* DCPU_WorkbenchTests.h */ = {isa = PBXFileReference; path = DCPU_WorkbenchTests.h; sourceTree = "<group>"; };
+		9FA5FB701533335400075808 /* DCPU_WorkbenchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCPU_WorkbenchTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9FA5FB3C1533335300075808 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FA5FB441533335300075808 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FA5FB5F1533335400075808 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FA5FB651533335400075808 /* SenTestingKit.framework in Frameworks */,
+				9FA5FB661533335400075808 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9FA5FB341533335200075808 = {
+			isa = PBXGroup;
+			children = (
+				9FA5FB491533335300075808 /* DCPU Workbench */,
+				9FA5FB691533335400075808 /* DCPU WorkbenchTests */,
+				9FA5FB421533335300075808 /* Frameworks */,
+				9FA5FB401533335300075808 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9FA5FB401533335300075808 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9FA5FB3F1533335300075808 /* DCPU Workbench.app */,
+				9FA5FB631533335400075808 /* DCPU WorkbenchTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9FA5FB421533335300075808 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9FA5FB431533335300075808 /* Cocoa.framework */,
+				9FA5FB641533335400075808 /* SenTestingKit.framework */,
+				9FA5FB451533335300075808 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9FA5FB451533335300075808 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9FA5FB461533335300075808 /* AppKit.framework */,
+				9FA5FB471533335300075808 /* CoreData.framework */,
+				9FA5FB481533335300075808 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		9FA5FB491533335300075808 /* DCPU Workbench */ = {
+			isa = PBXGroup;
+			children = (
+				9FA5FB551533335300075808 /* ARCDocument.h */,
+				9FA5FB561533335300075808 /* ARCDocument.m */,
+				9FA5FB581533335300075808 /* ARCDocument.xib */,
+				9FA5FB5B1533335300075808 /* MainMenu.xib */,
+				9FA5FB4A1533335300075808 /* Supporting Files */,
+			);
+			path = "DCPU Workbench";
+			sourceTree = "<group>";
+		};
+		9FA5FB4A1533335300075808 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9FA5FB4B1533335300075808 /* DCPU Workbench-Info.plist */,
+				9FA5FB4C1533335300075808 /* InfoPlist.strings */,
+				9FA5FB4F1533335300075808 /* main.m */,
+				9FA5FB511533335300075808 /* DCPU Workbench-Prefix.pch */,
+				9FA5FB521533335300075808 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9FA5FB691533335400075808 /* DCPU WorkbenchTests */ = {
+			isa = PBXGroup;
+			children = (
+				9FA5FB6F1533335400075808 /* DCPU_WorkbenchTests.h */,
+				9FA5FB701533335400075808 /* DCPU_WorkbenchTests.m */,
+				9FA5FB6A1533335400075808 /* Supporting Files */,
+			);
+			path = "DCPU WorkbenchTests";
+			sourceTree = "<group>";
+		};
+		9FA5FB6A1533335400075808 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9FA5FB6B1533335400075808 /* DCPU WorkbenchTests-Info.plist */,
+				9FA5FB6C1533335400075808 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9FA5FB3E1533335300075808 /* DCPU Workbench */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FA5FB741533335400075808 /* Build configuration list for PBXNativeTarget "DCPU Workbench" */;
+			buildPhases = (
+				9FA5FB3B1533335300075808 /* Sources */,
+				9FA5FB3C1533335300075808 /* Frameworks */,
+				9FA5FB3D1533335300075808 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DCPU Workbench";
+			productName = "DCPU Workbench";
+			productReference = 9FA5FB3F1533335300075808 /* DCPU Workbench.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9FA5FB621533335400075808 /* DCPU WorkbenchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FA5FB771533335400075808 /* Build configuration list for PBXNativeTarget "DCPU WorkbenchTests" */;
+			buildPhases = (
+				9FA5FB5E1533335400075808 /* Sources */,
+				9FA5FB5F1533335400075808 /* Frameworks */,
+				9FA5FB601533335400075808 /* Resources */,
+				9FA5FB611533335400075808 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9FA5FB681533335400075808 /* PBXTargetDependency */,
+			);
+			name = "DCPU WorkbenchTests";
+			productName = "DCPU WorkbenchTests";
+			productReference = 9FA5FB631533335400075808 /* DCPU WorkbenchTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9FA5FB361533335200075808 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = ARC;
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "Untangled Software";
+			};
+			buildConfigurationList = 9FA5FB391533335200075808 /* Build configuration list for PBXProject "DCPU Workbench" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9FA5FB341533335200075808;
+			productRefGroup = 9FA5FB401533335300075808 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9FA5FB3E1533335300075808 /* DCPU Workbench */,
+				9FA5FB621533335400075808 /* DCPU WorkbenchTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9FA5FB3D1533335300075808 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FA5FB4E1533335300075808 /* InfoPlist.strings in Resources */,
+				9FA5FB541533335300075808 /* Credits.rtf in Resources */,
+				9FA5FB5A1533335300075808 /* ARCDocument.xib in Resources */,
+				9FA5FB5D1533335300075808 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FA5FB601533335400075808 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FA5FB6E1533335400075808 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9FA5FB611533335400075808 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9FA5FB3B1533335300075808 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FA5FB501533335300075808 /* main.m in Sources */,
+				9FA5FB571533335300075808 /* ARCDocument.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FA5FB5E1533335400075808 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FA5FB711533335400075808 /* DCPU_WorkbenchTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9FA5FB681533335400075808 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9FA5FB3E1533335300075808 /* DCPU Workbench */;
+			targetProxy = 9FA5FB671533335400075808 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9FA5FB4C1533335300075808 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9FA5FB4D1533335300075808 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9FA5FB521533335300075808 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9FA5FB531533335300075808 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		9FA5FB581533335300075808 /* ARCDocument.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9FA5FB591533335300075808 /* en */,
+			);
+			name = ARCDocument.xib;
+			sourceTree = "<group>";
+		};
+		9FA5FB5B1533335300075808 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9FA5FB5C1533335300075808 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		9FA5FB6C1533335400075808 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9FA5FB6D1533335400075808 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9FA5FB721533335400075808 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		9FA5FB731533335400075808 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		9FA5FB751533335400075808 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DCPU Workbench/DCPU Workbench-Prefix.pch";
+				INFOPLIST_FILE = "DCPU Workbench/DCPU Workbench-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9FA5FB761533335400075808 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DCPU Workbench/DCPU Workbench-Prefix.pch";
+				INFOPLIST_FILE = "DCPU Workbench/DCPU Workbench-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		9FA5FB781533335400075808 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DCPU Workbench.app/Contents/MacOS/DCPU Workbench";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DCPU Workbench/DCPU Workbench-Prefix.pch";
+				INFOPLIST_FILE = "DCPU WorkbenchTests/DCPU WorkbenchTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		9FA5FB791533335400075808 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DCPU Workbench.app/Contents/MacOS/DCPU Workbench";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DCPU Workbench/DCPU Workbench-Prefix.pch";
+				INFOPLIST_FILE = "DCPU WorkbenchTests/DCPU WorkbenchTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9FA5FB391533335200075808 /* Build configuration list for PBXProject "DCPU Workbench" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FA5FB721533335400075808 /* Debug */,
+				9FA5FB731533335400075808 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9FA5FB741533335400075808 /* Build configuration list for PBXNativeTarget "DCPU Workbench" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FA5FB751533335400075808 /* Debug */,
+				9FA5FB761533335400075808 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9FA5FB771533335400075808 /* Build configuration list for PBXNativeTarget "DCPU WorkbenchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FA5FB781533335400075808 /* Debug */,
+				9FA5FB791533335400075808 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9FA5FB361533335200075808 /* Project object */;
+}
