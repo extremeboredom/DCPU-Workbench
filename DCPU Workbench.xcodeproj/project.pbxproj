@@ -203,7 +203,7 @@
 			attributes = {
 				CLASSPREFIX = ARC;
 				LastUpgradeCheck = 0430;
-				ORGANIZATIONNAME = "Untangled Software";
+				ORGANIZATIONNAME = "Adam Cox";
 			};
 			buildConfigurationList = 9FA5FB391533335200075808 /* Build configuration list for PBXProject "DCPU Workbench" */;
 			compatibilityVersion = "Xcode 3.2";
