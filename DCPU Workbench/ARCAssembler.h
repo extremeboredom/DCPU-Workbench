@@ -10,6 +10,9 @@
 
 @interface ARCAssembler : NSObject
 
-- (unsigned short)resolveRegister:(NSString *)name;
+- (unsigned short)resolveNamed:(NSString *)name;
+- (unsigned short)resolveHex:(NSString *)hex;
+- (unsigned short)resolveIndirect:(NSString *)hex;
+- (unsigned short)resolveValue:(NSString *)hex;
 
 @end
