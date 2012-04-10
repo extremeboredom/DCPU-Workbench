@@ -15,6 +15,8 @@
 - (BOOL)resolveIndirect:(NSString *)hex word0:(unsigned short *)word0 word1:(unsigned short *)word1;
 - (BOOL)resolveHex:(NSString *)hex word0:(unsigned short *)word0 word1:(unsigned short *)word1;
 - (unsigned short)convertHex:(NSString *)hex;
+- (BOOL)resolveBasicOpCode:(NSString *)opCode toValue:(unsigned short *)value;
+- (BOOL)resolveExtendedOpCode:(NSString *)opCode toValue:(unsigned short *)value;
 
 @end
 
@@ -25,6 +27,8 @@
     NSRegularExpression *literalExp;
     NSRegularExpression *indirectExp;
     NSRegularExpression *combinedExp;
+    NSDictionary *opCodes;
+    NSDictionary *extendedOpCodes;
 }
 
 - (id)init
@@ -41,6 +45,28 @@
         indirectExp = [[NSRegularExpression alloc] initWithPattern:@"^\\[([a-zA-Z]+)|(0x[0-9a-fA-F]+)|(0x[0-9a-fA-F]+\\+[a-zA-Z]+)\\]$" options:NSRegularExpressionAnchorsMatchLines error:nil];
         
         combinedExp = [[NSRegularExpression alloc] initWithPattern:@"^(0x[0-9a-fA-F]+\\+[a-zA-Z]+)$" options:NSRegularExpressionAnchorsMatchLines error:nil];
+        
+        opCodes = [NSDictionary dictionaryWithObjectsAndKeys:
+                                 [NSNumber numberWithUnsignedShort:0x01], @"SET",
+                                 [NSNumber numberWithUnsignedShort:0x02], @"ADD",
+                                 [NSNumber numberWithUnsignedShort:0x03], @"SUB",
+                                 [NSNumber numberWithUnsignedShort:0x04], @"MUL",
+                                 [NSNumber numberWithUnsignedShort:0x05], @"DIV",
+                                 [NSNumber numberWithUnsignedShort:0x06], @"MOD",
+                                 [NSNumber numberWithUnsignedShort:0x07], @"SHL",
+                                 [NSNumber numberWithUnsignedShort:0x08], @"SHR",
+                                 [NSNumber numberWithUnsignedShort:0x09], @"AND",
+                                 [NSNumber numberWithUnsignedShort:0x0A], @"BOR",
+                                 [NSNumber numberWithUnsignedShort:0x0B], @"XOR",
+                                 [NSNumber numberWithUnsignedShort:0x0C], @"IFE",
+                                 [NSNumber numberWithUnsignedShort:0x0D], @"IFN",
+                                 [NSNumber numberWithUnsignedShort:0x0E], @"IFG",
+                                 [NSNumber numberWithUnsignedShort:0x0F], @"IFB",
+                                 nil];
+        
+        extendedOpCodes = [NSDictionary dictionaryWithObjectsAndKeys:
+                   [NSNumber numberWithUnsignedShort:0x01], @"JSR",
+                   nil];
     }
     return self;
 }
@@ -169,6 +195,43 @@
     }
     
     return NO;
+}
+
+- (BOOL)resolveBasicOpCode:(NSString *)opCode toValue:(unsigned short *)value
+{
+    NSNumber *opCodeValue = [opCodes objectForKey:opCode];
+    if (opCodeValue != nil)
+    {
+        *value = [opCodeValue unsignedShortValue];
+        return YES;
+    }
+    
+    return NO;
+}
+
+- (BOOL)resolveExtendedOpCode:(NSString *)opCode toValue:(unsigned short *)value
+{
+    NSNumber *opCodeValue = [extendedOpCodes objectForKey:opCode];
+    if (opCodeValue != nil)
+    {
+        *value = [opCodeValue unsignedShortValue];
+        return YES;
+    }
+    
+    return NO;
+}
+
+- (BOOL)resolveOpCode:(NSString *)opCode toValue:(unsigned short *)value isBasic:(BOOL *)isBasic
+{
+    BOOL success = NO;
+    *isBasic = success = [self resolveBasicOpCode:opCode toValue:value];
+    if (!success)
+    {
+        isBasic = NO;
+        success = [self resolveExtendedOpCode:opCode toValue:value];
+    }
+    
+    return success;
 }
 
 @end

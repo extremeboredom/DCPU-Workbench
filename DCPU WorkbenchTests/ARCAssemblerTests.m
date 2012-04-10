@@ -171,4 +171,56 @@
     STAssertEquals(word1, expectedWord1, @"Word 1 for [0x604+Y] should be 0x604");
 }
 
+- (void)testResolveBasicOpCode
+{
+    NSDictionary *opCodes = [NSDictionary dictionaryWithObjectsAndKeys:
+    [NSNumber numberWithUnsignedShort:0x01], @"SET",
+    [NSNumber numberWithUnsignedShort:0x02], @"ADD",
+    [NSNumber numberWithUnsignedShort:0x03], @"SUB",
+    [NSNumber numberWithUnsignedShort:0x04], @"MUL",
+    [NSNumber numberWithUnsignedShort:0x05], @"DIV",
+    [NSNumber numberWithUnsignedShort:0x06], @"MOD",
+    [NSNumber numberWithUnsignedShort:0x07], @"SHL",
+    [NSNumber numberWithUnsignedShort:0x08], @"SHR",
+    [NSNumber numberWithUnsignedShort:0x09], @"AND",
+    [NSNumber numberWithUnsignedShort:0x0A], @"BOR",
+    [NSNumber numberWithUnsignedShort:0x0B], @"XOR",
+    [NSNumber numberWithUnsignedShort:0x0C], @"IFE",
+    [NSNumber numberWithUnsignedShort:0x0D], @"IFN",
+    [NSNumber numberWithUnsignedShort:0x0E], @"IFG",
+    [NSNumber numberWithUnsignedShort:0x0F], @"IFB",
+    nil];
+    
+    unsigned short value;
+    BOOL isBasic;
+    
+    for (NSString *opCode in opCodes)
+    {
+        unsigned short expected = [[opCodes objectForKey:opCode ] unsignedShortValue];
+        STAssertTrue([assembler resolveOpCode:opCode toValue:&value isBasic:&isBasic], @"Resolving Op Code %@ should be successful.", opCode);
+        
+        STAssertEquals(value, expected, @"OpCode %@ should be at 0x%01X", opCode, expected);
+        STAssertTrue(isBasic, @"Op Code %@ is basic.", opCode);
+    }
+}
+
+- (void)testResolveNonBasicOpCode
+{
+    NSDictionary *opCodes = [NSDictionary dictionaryWithObjectsAndKeys:
+                             [NSNumber numberWithUnsignedShort:0x01], @"JSR",
+                             nil];
+    
+    unsigned short value;
+    BOOL isBasic;
+    
+    for (NSString *opCode in opCodes)
+    {
+        unsigned short expected = [[opCodes objectForKey:opCode ] unsignedShortValue];
+        STAssertTrue([assembler resolveOpCode:opCode toValue:&value isBasic:&isBasic], @"Resolving Op Code %@ should be successful.", opCode);
+        
+        STAssertEquals(value, expected, @"OpCode %@ should be at 0x%01X", opCode, expected);
+        STAssertFalse(isBasic, @"Op Code %@ is not basic.", opCode);
+    }
+}
+
 @end

@@ -12,4 +12,6 @@
 
 - (BOOL)resolveValue:(NSString *)hex word0:(unsigned short *)word0 word1:(unsigned short *)word1;
 
+- (BOOL)resolveOpCode:(NSString *)opCode toValue:(unsigned short *)value isBasic:(BOOL *)isBasic;
+
 @end
